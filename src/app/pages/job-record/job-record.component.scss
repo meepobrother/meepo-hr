@@ -1,0 +1,109 @@
+.jobRecord {
+    background: #f8f8fc;
+    .scorll_list {
+        .noTips {
+            .imgTips {
+                margin-top: 56px;
+                .img {
+                    display: block;
+                    width: 130px;
+                    height: 130px;
+                    background: url("./no_record.8904552.png") no-repeat 50%;
+                    background-size: 60%;
+                    margin: 0 auto;
+                }
+            }
+            .text {
+                font-size: .28rem;
+                color: #99a9bf;
+                text-align: center;
+                margin-top: 0.2rem;
+                p {
+                    margin-top: 10px;
+                    &:last-child {
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+        .list_content {
+            height: 1.92rem;
+            background: #fff;
+            padding: .3rem .3rem .28rem;
+            margin-top: 0.25rem;
+            .positionName {
+                & {
+                    color: #222;
+                    font-size: .34rem;
+                    margin-bottom: 0.2rem;
+                }
+                .text {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .status {
+                    display: inline-block;
+                    vertical-align: top;
+                    background: #e8f1f8;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    float: right;
+                    color: #5aa2e7;
+                    font-size: .26rem;
+                    margin-top: -2px;
+                }
+                .status_fail {
+                    display: inline-block;
+                    vertical-align: top;
+                    background: #ffeaea;
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    float: right;
+                    color: #f96868;
+                    font-size: .26rem;
+                    margin-top: -2px;
+                }
+            }
+            .companyName {
+                font-size: .26rem;
+                margin-bottom: 0.2rem;
+                .company_icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: .3rem;
+                    height: .25rem;
+                    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAYAAAAA9rgCAAAAAXNSR0IArs4c6QAABOZJREFUaAXtml1oXEUUx93d7G6TWNOE0lQ04EtwS9ykSTYJ6qs+aAUfhFL6WtJCKZSi0BfFKlTwQfTBllKKVV+ECr4oKr4UEYTNByGGLXlR7Feaoi3N1u1ms2bT31nuhZt7Z7L35t7d7m4zMMzMmTPnnP98npl7Q09UCFNTU4lSqXQEtlfX1tZ6SNsqNHFdHQqFcsi8SvpLOBw+l0ql/nTdeJOMIV07DAkD9iPAvg1Pi44vKDqgi8TTgP6QdC0ouXY5WsATExPfAPqA0eAuRvxMnIL2j12Ij3I3bVPE15DbIXLQcWF0dHRc8tUISsCAPY4Bn4lCDPiBZBwjFqthgMicnZ19tlAoXETnK1Jmeh8aGRn5QvJBBwfg+fn57UtLS1dR1ElMA/RlQK8GrdguL5PJxHK5nMygJPoWOzs7n+vt7S3Y+fyWw3YB2Wz2dWgCVkb3UC3Aiq6+vr6VSCRyWPKA3k2nl0dbykEGB2CEv2QouMHoZoJUVknW0NBQmg6+J3yAfrES/2bqVYB3G4JmNyPQTxvAyu5c1svpYNrhR6SjrQpwVLhQnnNw14bwwFATq4Y6FeBq6KkbmZ4dirm5ue58Pv+rBsHHrPuLZt3k5OQx1uIxs2xN29vbU2xU/1lptch7BszaigLieZVxLIMuKx3enZSVvHRaxMpbq7xnwG1tbdmVlZVTKgMB+LuVTgdcNjYiK7mc7+joWHYQa0DwDBhnIItdH7ixjektU183/d2ICJzHM+DALdAIZGbsYQ84oam2kmVXv8bM+83NnlC3gNknUhKtyDbK45YWuAN83dra+l4ymbyt463bY4kRLmK07OIbRnOPoHPixHE2w5l0Oq3tqHoe4U/HxsZO6kbKpMtlB/9/iPJRAO8nPk0n/DQzMzMyODj4t8lnpnUL2DSwUppIJO7DU94cGdkfyX8J6J2cJJ+Tf8Pevm6ntN1QN2VmxFeM7nmDdx+b3gv2dk0FWMDxeHDKBMlIN/cIC1DexG6R3JQ8gHsltYZNrWEE6dzCkrlrihL4QiTKWQRfNV9R/kLvM+goP2SILWbwDFjenzjvrpsCrCkK3qH8iUmD733yEh2BF9EdjMaSoyIAgnQ6QSlJ2ftKziYheh7hrq6uOwsLC/tV+OnV8muFWReNRi8Vi0XdM5G4hDUPngH39PTksfJbN5byRnUFPol1EzwDflSWM3si09PTcZX+4eHhvKxbVZ2d1jBrmE3u4Orqak4VqdtrB6YrNwxgHQCv9IaZ0rFY7DL+8ZsqgExnOXddhYYBPDAwcANEEn2Fx25KbwH2NV8aoLHnNcwRIJ9iEhpst/CP/zXr8Lt34WnJR29H4OzMsNmUHBVVJngGjLvYvby8/IfKLgCsuzzAdxQ+5eUBJ2IHda4vD1xE5Kx9S6WXO/BZ41qoql5H8wx4XesaFujMJA/976pU4oV9B13uwRWDZ8D9/f2LPJD1qSQzfdc9jzIbzsB3ScXLA5u8RbkOgLoHaOVFhBF2/RXDM2CU/o+Vri4EXB7kB5hAfoLhK8b3yJLoK2wdS766rwEab41wAwySLxO3RthX9zVA4xZx//jtzzrS2wy7t+HdVOXXoY36hfO2/IzD8ddteFcbsevqnlRhiMfjpRAfoMS9e0rXssno960j22TY1HBa+L9xH9PIs8elFlffVPESHwJOv7HT7Q2uhwAAAABJRU5ErkJggg==) no-repeat 50%;
+                    background-size: 100%;
+                }
+                .company_text {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: .26rem;
+                    height: .24rem;
+                    color: #999;
+                }
+            }
+            .applyTime {
+                font-size: .26rem;
+                color: #999;
+            }
+        }
+        .morePosition_content {
+            text-align: center;
+            width: 100%;
+            margin-top: 15px;
+            .morePosition,
+            .moreTop {
+                font-size: .36rem;
+                width: 3.6rem;
+                height: .84rem;
+                line-height: .84rem;
+                text-align: center;
+                color: #fff;
+                background: #5aa2e7;
+                margin: 0 auto;
+                border-radius: 5px;
+            }
+        }
+    }
+}
